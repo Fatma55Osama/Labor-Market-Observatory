@@ -1,0 +1,10 @@
+{
+  "description": "This platform provides a comprehensive overview of the engineering job market in Egypt, offering data analysis, labor indicators, and resources for job seekers and employers.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
