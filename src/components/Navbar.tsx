@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { NavLink, Link } from 'react-router-dom'
-import siteLogo from '@/imports/________________________-2.png'
+import siteLogo from '@/assets/________________________-2.png'
 
 const navItems = [
   { label: 'الرئيسية', to: '/' },
