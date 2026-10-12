@@ -1,8 +1,12 @@
-import higherEducationLogo from '@/imports/WhatsApp_Image_2026-09-26_at_3.50.32_PM.jpeg'
-import img1 from'@/imports/km.jpg'
-import img2 from'@/imports/moh.jpg'
-import img3 from'@/imports/داليا.jpeg'
-import img4 from'@/imports/محرم.jpeg'
+import higherEducationLogo from '@/assets/WhatsApp_Image_2026-09-26_at_3.50.32_PM.jpeg'
+import engineerLogo from '@/assets/logos/logo1.png'
+import worklogo from '@/assets/logos/logo3.png'
+import Statistics from '@/assets/logos/logo4.png'
+import DecisionSupport from '@/assets/logos/logo5.png'
+import img1 from'@/assets/km.jpg'
+import img2 from'@/assets/moh.jpg'
+import img3 from'@/assets/داليا.jpeg'
+import img4 from'@/assets/محرم.jpeg'
 const pioneers = [
   {
     id: 1,
@@ -50,7 +54,7 @@ const partners = [
   {
     name: 'نقابة المهندسين المصريين',
     short: 'نقابة المهندسين المصريين',
-    logo: '/logos/logo1.png',
+    logo: engineerLogo,
     bg: 'var(--success-soft)',
   },
   {
@@ -62,19 +66,19 @@ const partners = [
   {
     name: 'وزارة العمل',
     short: 'وزارة العمل',
-    logo: '/logos/logo3.png',
+    logo: worklogo,
     bg: 'var(--warning-soft)',
   },
   {
     name: 'الجهاز المركزي للتعبئة العامة والإحصاء',
     short: 'الجهاز المركزي للإحصاء',
-    logo: '/logos/logo4.png',
+    logo: Statistics,
     bg: 'var(--info-soft)',
   },
   {
     name: 'مركز المعلومات ودعم اتخاذ القرار',
     short: 'مركز المعلومات ودعم القرار',
-    logo: '/logos/logo5.png',
+    logo: DecisionSupport,
     bg: 'var(--danger-soft)',
   },
 ]

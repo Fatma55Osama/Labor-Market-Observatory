@@ -1,8 +1,12 @@
 import { useState } from "react";
 import PageHeader from "../components/PageHeader";
-import mohamedAbdelGhaniImage from "@/imports/images__1_.jpg";
-import ahmedElBadawyImage from "@/imports/images.jpg";
-import higherEducationLogo from "@/imports/WhatsApp_Image_2026-09-26_at_3.50.32_PM-2.jpeg";
+import mohamedAbdelGhaniImage from "@/assets/images__1_.jpg";
+import ahmedElBadawyImage from "@/assets/images.jpg";
+import higherEducationLogo from '@/assets/WhatsApp_Image_2026-09-26_at_3.50.32_PM.jpeg'
+import engineerLogo from '@/assets/logos/logo1.png'
+import worklogo from '@/assets/logos/logo3.png'
+import Statistics from '@/assets/logos/logo4.png'
+import DecisionSupport from '@/assets/logos/logo5.png'
 import { ChartNoAxesColumnIncreasing, ChartNoAxesCombined,  Clock5, Globe, Landmark, Mail, MapPinCheck, Phone, Target, Telescope } from "lucide-react";
 
 type AboutTab = "overview" | "goals" | "partners" | "structure" | "contact";
@@ -50,7 +54,7 @@ const partners = [
   {
     name: "نقابة المهندسين المصريين",
     role: "شريك استراتيجي رئيسي",
-    img: "/logos/logo1.png",
+    img: engineerLogo,
     bg: "var(--success-soft)",
   },
   {
@@ -62,19 +66,19 @@ const partners = [
   {
     name: "وزارة العمل",
     role: "جهة بيانات رسمية عن سوق العمل",
-    img: "/logos/logo3.png",
+    img: worklogo,
     bg: "var(--warning-soft)",
   },
   {
     name: "الجهاز المركزي للتعبئة العامة والإحصاء",
     role: "مزود البيانات الإحصائية الوطنية",
-    img: "/logos/logo4.png",
+    img: Statistics,
     bg: "var(--info-soft)",
   },
   {
     name: "مركز المعلومات ودعم اتخاذ القرار",
     role: "شريك في نمذجة البيانات والتحليل",
-    img: "/logos/logo5.png",
+    img: DecisionSupport,
     bg: "var(--danger-soft)",
   },
 ];

@@ -1,4 +1,4 @@
-import heroImage from '../imports/herosectin.jpeg';
+import heroImage from '@/assets/herosectin.jpeg';
 export default function Hero() {
   return (
      <section

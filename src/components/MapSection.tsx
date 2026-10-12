@@ -1,7 +1,6 @@
 // @refresh reset
 import { useState, useRef, useCallback, useEffect } from 'react'
-// import egyptMapImage from '@/imports/map-attachment.jpg'
-import egyptMapImage from '@/imports/Green Governorates Map of Egypt.png'
+import egyptMapImage from '@/assets/Green Governorates Map of Egypt.png'
 // ─── PIN POSITIONS ────────────────────────────────────────────────────────────
 // Edit `top` and `left` (as % of the map container) to reposition any pin.
 // `label` is the display name shown in the tooltip.

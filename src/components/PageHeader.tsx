@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import bgimge from '@/imports/bgsection3.jpeg'
+import bgimge from '@/assets/bgsection3.jpeg'
 
 interface Crumb {
   label: string

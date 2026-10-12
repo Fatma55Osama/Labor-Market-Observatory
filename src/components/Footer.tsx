@@ -1,4 +1,4 @@
-import siteLogo from '@/imports/________________________-2.png'
+import siteLogo from '@/assets/________________________-2.png'
 
 export default function Footer() {
   const year = new Date().getFullYear()

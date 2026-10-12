@@ -1,7 +1,7 @@
 // @refresh reset
 import { useState, useRef, useCallback, useEffect } from 'react'
 import PageHeader from '../components/PageHeader'
-import egyptMapImage from '@/imports/map-attachment.jpg'
+import egyptMapImage from '@/assets/Green Governorates Map of Egypt.png'
 
 const STORAGE_KEY = 'map-page-pin-positions-v1'
 
