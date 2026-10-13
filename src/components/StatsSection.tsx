@@ -102,7 +102,7 @@ export default function StatsSection() {
                 className="bg-background backdrop-blur-sm border border-white/12 rounded-2xl p-4 text-center hover:bg-gray-300 transition-colors"
               >
                 <div className="text-3xl mb-2 flex  justify-center text-center">
-                  <Icon size={35} strokeWidth={1.8} className="text-yellow-500 " />
+                  <Icon size={35} strokeWidth={1.8} className="text-[var(--iconColor)]" />
                 </div>
 
                 <div

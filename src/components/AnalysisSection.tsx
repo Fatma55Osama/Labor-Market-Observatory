@@ -1,3 +1,4 @@
+import { Construction, Fuel, Laptop, Zap } from 'lucide-react'
 import { useState } from 'react'
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Tooltip, Cell } from 'recharts'
 
@@ -5,7 +6,7 @@ const sectors = [
   {
     id: 'construction',
     title: 'البناء والتشييد',
-    icon: '🏗️',
+    icon: Construction,
     color: 'var(--primary)',
     demand: '+18%',
     engineers: 520000,
@@ -20,7 +21,7 @@ const sectors = [
   {
     id: 'energy',
     title: 'الطاقة والكهرباء',
-    icon: '⚡',
+    icon: Zap,
     color: 'var(--secondary)',
     demand: '+23%',
     engineers: 310000,
@@ -35,7 +36,7 @@ const sectors = [
   {
     id: 'it',
     title: 'تقنية المعلومات',
-    icon: '💻',
+    icon: Laptop,
     color: 'var(--chart-3)',
     demand: '+35%',
     engineers: 245000,
@@ -50,7 +51,7 @@ const sectors = [
   {
     id: 'oil',
     title: 'البترول والغاز',
-    icon: '🛢️',
+    icon: Fuel,
     color: 'var(--chart-4)',
     demand: '+9%',
     engineers: 185000,
@@ -99,7 +100,7 @@ export default function AnalysisSection() {
                   : 'bg-[var(--card)] text-[var(--primary)] border border-[var(--border)] hover:border-[var(--primary)] hover:text-[var(--primary)]'
               }`}
             >
-              <span>{s.icon}</span>
+             <s.icon size={28} strokeWidth={1.8} className="text-[var(--iconColor)]"  />
               {s.title}
             </button>
           ))}
@@ -112,7 +113,7 @@ export default function AnalysisSection() {
             <div className="flex items-start justify-between mb-5">
               <div>
                 <div className="flex items-center gap-2 mb-1">
-                  <span className="text-2xl">{current.icon}</span>
+                  <current.icon size={28} strokeWidth={1.8} className="text-[var(--iconColor)]"  />
                   <h3 className="text-lg font-black text-[var(--primary)]">قطاع {current.title}</h3>
                 </div>
                 <div className="text-sm text-[var(--muted-foreground)]">الطلب على الوظائف — آخر 6 أشهر (بالآلاف)</div>

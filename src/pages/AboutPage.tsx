@@ -16,7 +16,7 @@ const goals = [
     icon: ChartNoAxesCombined,
     title: "رصد سوق العمل الهندسي",
     desc: "تجميع وتحليل بيانات شاملة ودقيقة عن القوى العاملة الهندسية في مصر على المستوى الوطني والقطاعي والجغرافي.",
-    color: "var(--primary)",
+    color: "var(--secondary)",
   },
   {
     icon:Telescope,
@@ -28,25 +28,25 @@ const goals = [
     icon: Target,
     title: "قياس الفجوات المهارية",
     desc: "تقييم الفجوة بين مخرجات التعليم الهندسي ومتطلبات سوق العمل، وتقديم توصيات لتقليصها.",
-    color: "var(--chart-3)",
+    color: "var(--secondary)",
   },
   {
     icon: Landmark,
     title: "دعم صنع القرار",
     desc: "توفير بيانات موثوقة ومحدثة لصانعي القرار في الجهات الحكومية والتعليمية والصناعية.",
-    color: "var(--chart-4)",
+    color: "var(--secondary)",
   },
   {
     icon: Globe,
     title: "التواصل الدولي",
     desc: "ربط الكوادر الهندسية المصرية بالفرص والمعايير الدولية وتعزيز التنافسية على المستوى العالمي.",
-    color: "var(--warning)",
+    color: "var(--secondary)",
   },
   {
     icon: ChartNoAxesColumnIncreasing,
     title: "نشر ثقافة البيانات",
     desc: "تعزيز الوعي بأهمية البيانات في قرارات التعليم والتوظيف لدى المهندسين وأصحاب العمل.",
-    color: "var(--chart-2)",
+    color: "var(--secondary)",
   },
 ];
 
@@ -56,6 +56,12 @@ const partners = [
     role: "شريك استراتيجي رئيسي",
     img: engineerLogo,
     bg: "var(--success-soft)",
+  },
+   {
+    name: "مركز المعلومات ودعم اتخاذ القرار",
+    role: "شريك في نمذجة البيانات والتحليل",
+    img: DecisionSupport,
+    bg: "var(--danger-soft)",
   },
   {
     name: "وزارة التعليم العالي والبحث العلمي",
@@ -75,12 +81,7 @@ const partners = [
     img: Statistics,
     bg: "var(--info-soft)",
   },
-  {
-    name: "مركز المعلومات ودعم اتخاذ القرار",
-    role: "شريك في نمذجة البيانات والتحليل",
-    img: DecisionSupport,
-    bg: "var(--danger-soft)",
-  },
+ 
 ];
 
 const orgUnits = [
@@ -282,7 +283,7 @@ export default function AboutPage() {
                 key={g.title}
                 className="bg-white rounded-2xl border border-[var(--border)] p-6 card-hover"
               >
-                <g.icon size={35} strokeWidth={1.8} className="text-yellow-500 mb-3" />
+                <g.icon size={35} strokeWidth={1.8} className="text-[var(--iconColor)] mb-3" />
                 <h3
                   className="font-bold text-base mb-2"
                   style={{ color: g.color }}
@@ -451,7 +452,7 @@ export default function AboutPage() {
                     },
                   ].map((c) => (
                     <div key={c.label} className="flex items-start gap-3">
-                      <c.icon size={20} strokeWidth={1.8} className="text-yellow-500 " />
+                      <c.icon size={20} strokeWidth={1.8} className="text-[var(--iconColor)]" />
                       <div>
                         <div className="text-xs font-semibold text-[var(--muted-foreground)]">
                           {c.label}

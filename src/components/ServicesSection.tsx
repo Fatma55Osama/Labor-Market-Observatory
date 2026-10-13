@@ -1,61 +1,43 @@
+import { Award, BookOpen, Package, BriefcaseBusiness } from "lucide-react";
+
+
 const services = [
   {
     id: 'forecast',
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-        <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
-        <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
-        <line x1="12" y1="22.08" x2="12" y2="12"/>
-      </svg>
-    ),
+    icon: Package,
     title: 'توقع الطلب والمهارات',
     desc: 'نماذج ذكاء اصطناعي لتوقع احتياجات سوق العمل الهندسي خلال السنوات الخمس القادمة بدقة عالية.',
-    tags: ['AI', 'تحليل بيانات', 'تخطيط'],
+    // tags: ['AI', 'تحليل بيانات', 'تخطيط'],
     cta: 'استكشف التوقعات',
     color: 'var(--primary)',
     badge: 'الأكثر استخداماً',
   },
   {
     id: 'training',
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-        <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/>
-        <path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/>
-      </svg>
-    ),
+    icon:BookOpen,
     title: 'الدورات التدريبية',
     desc: 'برامج تدريبية معتمدة في أحدث التخصصات الهندسية بالتعاون مع كبرى الجامعات والجهات المعنية.',
-    tags: ['تدريب', 'شهادات', 'مهارات'],
+    // tags: ['تدريب', 'شهادات', 'مهارات'],
     cta: 'تصفح الدورات',
     color: 'var(--secondary)',
     badge: null,
   },
   {
     id: 'jobs',
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-        <rect x="2" y="7" width="20" height="14" rx="2"/>
-        <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/>
-      </svg>
-    ),
+    icon: BriefcaseBusiness,
     title: 'فرص العمل',
     desc: 'منصة توظيف متخصصة للمهندسين تربط بين الباحثين عن عمل وأبرز الشركات والجهات الحكومية.',
-    tags: ['توظيف', 'شركات', 'حكومي'],
+    // tags: ['توظيف', 'شركات', 'حكومي'],
     cta: 'ابحث عن فرصة',
     color: 'var(--chart-3)',
     badge: '1,240 وظيفة',
   },
   {
     id: 'grants',
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-        <circle cx="12" cy="8" r="7"/>
-        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
-      </svg>
-    ),
+    icon: Award,
     title: 'المنح الدراسية المجانية',
     desc: 'قاعدة بيانات شاملة للمنح الدراسية المحلية والدولية المتاحة للمهندسين المصريين للتطوير المهني.',
-    tags: ['منح', 'مجاني', 'دراسة'],
+    // tags: ['منح', 'مجاني', 'دراسة'],
     cta: 'تصفح المنح',
     color: 'var(--chart-4)',
     badge: 'مجاناً',
@@ -84,12 +66,11 @@ export default function ServicesSection() {
             >
               {/* Icon + badge */}
               <div className="flex items-start justify-between mb-4">
-                <div
-                  className="w-14 h-14 rounded-xl flex items-center justify-center"
-                  style={{ background: svc.color + '12', color: svc.color }}
-                >
-                  {svc.icon}
-                </div>
+                <svc.icon
+                  size={33}
+                className="text-[var(--iconColor)]"
+                />
+                
                 {svc.badge && (
                   <span
                     className="text-xs font-bold px-2.5 py-1 rounded-full"
@@ -104,13 +85,13 @@ export default function ServicesSection() {
               <p className="text-sm text-[var(--muted-foreground)] leading-relaxed mb-4 flex-1">{svc.desc}</p>
 
               {/* Tags */}
-              <div className="flex flex-wrap gap-1.5 mb-5">
+              {/* <div className="flex flex-wrap gap-1.5 mb-5">
                 {svc.tags.map(tag => (
                   <span key={tag} className="text-xs px-2 py-0.5 rounded-full bg-[var(--muted)] text-[var(--muted-foreground)]">
                     {tag}
                   </span>
                 ))}
-              </div>
+              </div> */}
 
               {/* CTA */}
               <button

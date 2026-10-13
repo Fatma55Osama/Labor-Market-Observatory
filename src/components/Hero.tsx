@@ -1,4 +1,5 @@
 import heroImage from '@/assets/herosectin.jpeg';
+import { ChartColumnIncreasing, MapPin } from 'lucide-react';
 export default function Hero() {
   return (
      <section
@@ -34,14 +35,15 @@ export default function Hero() {
                 href="#kpi"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-[var(--primary)] font-bold text-sm hover:bg-white/90 transition-colors shadow-lg"
               >
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M3 3v18h18"/><path d="M18 17V9M13 17V5M8 17v-3"/></svg>
+                <ChartColumnIncreasing size={18} className='text-[var(--iconColor)]' />
+
                 المؤشرات
               </a>
               <a
                 href="#map"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/15 border border-white/25 text-white font-bold text-sm hover:bg-white/25 transition-colors"
               >
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <MapPin size={18} className='text-[var(--iconColor)]' />
                 خريطة سوق العمل
               </a>
             </div>

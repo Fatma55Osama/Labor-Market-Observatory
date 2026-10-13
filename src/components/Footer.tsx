@@ -98,7 +98,7 @@ export default function Footer() {
                     borderBottomLeftRadius: '200px',
                     borderBottomRightRadius: '600px',
                     // backgroundColor: 'rgb(255, 255, 255)',
-                    borderWidth: '1px',
+                    // borderWidth: '1px',
                     borderStyle: 'solid',
                     borderColor: 'rgb(255, 255, 255)',
                     boxShadow: 'none',

@@ -220,8 +220,8 @@ function MarketTab() {
         </div>
 
         <div className="bg-white rounded-2xl border border-[var(--border)] p-6">
-          <div className="font-bold text-[var(--primary)] mb-1">امتصاص الخريجين الجدد</div>
-          <div className="text-xs text-[var(--muted-foreground)] mb-4">خريجون مقابل الممتصّون في سوق العمل (بالآلاف)</div>
+          <div className="font-bold text-[var(--primary)] mb-1"> الخريجين الجدد</div>
+          <div className="text-xs text-[var(--muted-foreground)] mb-4">الخريجون  مقابل الانخراط  في سوق العمل (بالآلاف)</div>
           <ResponsiveContainer width="100%" height={260}>
             <AreaChart data={graduatesData}>
               <defs>
@@ -240,7 +240,7 @@ function MarketTab() {
               <Tooltip content={<CT />} formatter={(v: any) => [v.toLocaleString('ar-EG') + 'K', '']} />
               <Legend wrapperStyle={{ fontFamily: 'Cairo', fontSize: 12 }} />
               <Area type="monotone" dataKey="graduates" name="الخريجون" stroke={C.navy} fill="url(#gGrad)" strokeWidth={2} />
-              <Area type="monotone" dataKey="absorbed" name="الممتصّون" stroke={C.teal} fill="url(#aGrad)" strokeWidth={2} />
+              <Area type="monotone" dataKey="absorbed" name="الخريجون العاملون" stroke={C.teal} fill="url(#aGrad)" strokeWidth={2} />
             </AreaChart>
           </ResponsiveContainer>
         </div>
@@ -349,11 +349,11 @@ function UnemploymentTab() {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-3ب gap-4">
         {[
           { label: 'معدل البطالة الكلي', value: '8.2%', note: 'سبتمبر 2026', color: C.red },
           { label: 'بطالة الخريجين الجدد', value: '22.4%', note: 'أول سنتين من التخرج', color: C.amber },
-          { label: 'متوسط فترة البحث', value: '8.4 شهر', note: 'للمهندسين بدون خبرة', color: C.navy },
+          // { label: 'متوسط فترة البحث', value: '8.4 شهر', note: 'للمهندسين بدون خبرة', color: C.navy },
           { label: 'الملتحقون بالتدريب', value: '34%', note: 'من العاطلين نشطون في التدريب', color: C.teal },
         ].map(c => (
           <div key={c.label} className="bg-white rounded-2xl border border-[var(--border)] p-5 text-center">
@@ -567,12 +567,7 @@ export default function IndicatorsPage() {
         title="المؤشرات والتحليلات"
         subtitle="لوحة بيانات شاملة لمتابعة مؤشرات سوق العمل الهندسي في مصر"
         crumbs={[{ label: 'الرئيسية', to: '/' }, { label: 'المؤشرات والتحليلات' }]}
-        actions={
-          <div className="flex items-center gap-2 text-xs text-white/70">
-            <span className="w-1.5 h-1.5 rounded-full bg-[var(--success-light)] animate-pulse" />
-            بيانات مباشرة — سبتمبر 2026
-          </div>
-        }
+      
       />
 
       <div className="max-w-7xl mx-auto px-6 py-8 space-y-6">

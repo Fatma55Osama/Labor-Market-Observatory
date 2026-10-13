@@ -91,37 +91,47 @@ const infographics = [
 
 const events = [
   {
-    id: 1, title: 'المؤتمر الوطني السادس لسوق العمل الهندسي',
-    type: 'مؤتمر', status: 'قادم',
+    id: 1, title: 'المؤتمر الوطني الأول لسوق العمل الهندسي',
+    type: 'مؤتمر', 
+    // status: 'قادم',
     date: '15–16 نوفمبر 2026', location: 'فندق سميراميس انتركونتيننتال، القاهرة',
     attendees: 1200, org: 'المرصد الوطني + نقابة المهندسين',
-    topics: ['مستقبل التشغيل', 'الذكاء الاصطناعي والهندسة', 'تمكين المهندسات'],
+    topics: 'المؤتمر الوطني الأول لسوق العمل الهندسي لمناقشة مستقبل التشغيل والذكاءالتشغيل الهندسي و الذكاء الاصتناعي في مصر والشرق الاوسط',
     tagColor: 'var(--primary)',
   },
-  {
-    id: 2, title: 'ندوة: الفجوة المهارية في القطاع الهندسي — سبل المعالجة',
-    type: 'ندوة', status: 'قادم',
-    date: '8 أكتوبر 2026', location: 'أونلاين — Zoom',
-    attendees: 500, org: 'مرصد سوق العمل الهندسي',
-    topics: ['تقنيات تقليص الفجوة', 'تجارب دولية', 'آليات التدريب'],
-    tagColor: 'var(--secondary)',
-  },
-  {
-    id: 3, title: 'ورشة عمل: استخدام بيانات المرصد في صنع القرار',
-    type: 'ورشة عمل', status: 'قادم',
-    date: '22 أكتوبر 2026', location: 'مقر المرصد، القاهرة الجديدة',
-    attendees: 80, org: 'مرصد سوق العمل الهندسي',
-    topics: ['قواعد البيانات', 'تحليل المؤشرات', 'نماذج القرار'],
-    tagColor: 'var(--chart-3)',
-  },
-  {
-    id: 4, title: 'المنتدى العربي لتشغيل الكوادر الهندسية',
-    type: 'منتدى', status: 'انتهى',
-    date: '5–6 سبتمبر 2026', location: 'القاهرة',
-    attendees: 850, org: 'اتحاد المهندسين العرب',
-    topics: ['التنقل المهني العربي', 'الاعتراف بالمؤهلات', 'التعاون الإقليمي'],
-    tagColor: 'var(--chart-4)',
-  },
+{
+  id: 2,
+  title: 'ندوة: الفجوة المهارية في القطاع الهندسي — سبل المعالجة',
+  type: 'ندوة',
+  date: '8 أكتوبر 2026',
+  location: 'أونلاين — Zoom',
+  attendees: 500,
+  org: 'مرصد سوق العمل الهندسي',
+  topics: 'تناقش الندوة تقنيات تقليص الفجوة المهارية، واستعراض التجارب الدولية، وآليات التدريب لتطوير الكوادر الهندسية.',
+  tagColor: 'var(--secondary)',
+},
+{
+  id: 3,
+  title: 'ورشة عمل: استخدام بيانات المرصد في صنع القرار',
+  type: 'ورشة عمل',
+  date: '22 أكتوبر 2026',
+  location: 'مقر المرصد، القاهرة الجديدة',
+  attendees: 80,
+  org: 'مرصد سوق العمل الهندسي',
+  topics: 'تستعرض الورشة قواعد البيانات المتاحة بالمرصد، وتحليل المؤشرات، وكيفية توظيف البيانات في بناء نماذج تدعم عملية صنع القرار.',
+  tagColor: 'var(--chart-3)',
+},
+{
+  id: 4,
+  title: 'المنتدى العربي لتشغيل الكوادر الهندسية',
+  type: 'منتدى',
+  date: '5–6 سبتمبر 2026',
+  location: 'القاهرة',
+  attendees: 850,
+  org: 'اتحاد المهندسين العرب',
+  topics: 'يناقش المنتدى التنقل المهني بين الدول العربية، والاعتراف بالمؤهلات الهندسية، وتعزيز التعاون الإقليمي لدعم فرص تشغيل الكوادر الهندسية.',
+  tagColor: 'var(--chart-4)',
+},
 ]
 
 const TABS: { id: MediaTab; label: string }[] = [
@@ -272,27 +282,27 @@ export default function MediaPage() {
                       <div>
                         <div className="flex items-center gap-2 mb-1">
                           <span className="text-xs px-2 py-0.5 rounded-full font-medium" style={{ background: ev.tagColor + '15', color: ev.tagColor }}>{ev.type}</span>
-                          <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${ev.status === 'قادم' ? 'bg-[var(--success-soft)] text-[var(--success-strong)]' : 'bg-[var(--muted)] text-[var(--muted-foreground)]'}`}>{ev.status}</span>
+                          {/* <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${ev.status === 'قادم' ? 'bg-[var(--success-soft)] text-[var(--success-strong)]' : 'bg-[var(--muted)] text-[var(--muted-foreground)]'}`}>{ev.status}</span> */}
                         </div>
                         <h3 className="font-bold text-[var(--primary)] text-base">{ev.title}</h3>
                       </div>
                       <span className="text-sm font-semibold text-[var(--muted-foreground)] shrink-0">{ev.attendees.toLocaleString('ar-EG')} حضور</span>
                     </div>
                     <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[var(--muted-foreground)] mb-3">
-                      <span className="flex items-center gap-1"><CalendarDays size={16} strokeWidth={2} className='text-yellow-500' /> {ev.date}</span>
-                      <span className="flex items-center gap-1"><MapPinCheck size={16} strokeWidth={2} className='text-blue-500' /> {ev.location}</span>
-                      <span className="flex items-center gap-1"><Landmark size={16} strokeWidth={2} className='text-green-500' /> {ev.org}</span>
+                      <span className="flex items-center gap-1"><CalendarDays size={16} strokeWidth={2} className='text-[var(--iconColor)]' /> {ev.date}</span>
+                      <span className="flex items-center gap-1"><MapPinCheck size={16} strokeWidth={2} className='text-[var(--iconColor)]' /> {ev.location}</span>
+                      <span className="flex items-center gap-1"><Landmark size={16} strokeWidth={2} className='text-[var(--iconColor)]' /> {ev.org}</span>
                     </div>
                     <div className="flex flex-wrap gap-2 mb-3">
-                      {ev.topics.map(t => (
-                        <span key={t} className="text-xs px-2.5 py-1 rounded-full bg-[var(--muted)] text-[var(--muted-foreground)]">{t}</span>
-                      ))}
+                    
+                        <span className="text-sm px-2.5 py-1  text-[var(--muted-foreground)]">{ev.topics}</span>
+                    
                     </div>
-                    {ev.status === 'قادم' && (
+                    {/* {ev.status === 'قادم' && (
                       <button className="px-5 py-2 rounded-xl bg-[var(--primary)] text-white text-sm font-semibold hover:opacity-90 transition-opacity">
                         سجّل حضورك
                       </button>
-                    )}
+                    )} */}
                   </div>
                 </div>
               </div>

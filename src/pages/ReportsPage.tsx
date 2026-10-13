@@ -113,11 +113,11 @@ export default function ReportsPage() {
         {/* Stats bar */}
         <div className="grid grid-cols-3 sm:grid-cols-5 gap-4">
           {[
-            { label: 'إجمالي التقارير', value: '147', color: 'var(--primary)' },
+            { label: 'إجمالي التقارير', value: '147', color: 'var(--secondary)' },
             { label: 'تقارير 2026', value: '38', color: 'var(--secondary)' },
-            { label: 'مصادر دولية', value: '24', color: 'var(--chart-3)' },
-            { label: 'باحثون مساهمون', value: '89', color: 'var(--chart-4)' },
-            { label: 'تحميلات هذا الشهر', value: '12.4K', color: 'var(--warning)' },
+            { label: 'مصادر دولية', value: '24', color: 'var(--secondary)' },
+            { label: 'تقرير باللغة العربية', value: '100', color: 'var(--secondary)' },
+            { label: 'تقرير باللغة الإنجليزية', value: '47', color: 'var(--secondary)' },
           ].map(s => (
             <div key={s.label} className="bg-white rounded-2xl border border-[var(--border)] p-4 text-center">
               <div className="text-2xl font-black number-animate mb-1" style={{ color: s.color }}>{s.value}</div>
@@ -180,7 +180,7 @@ export default function ReportsPage() {
                   <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
                   {rep.date}
                 </span>
-                <span>{rep.pages} صفحة</span>
+                {/* <span>{rep.pages} صفحة</span> */}
               </div>
 
               <div className="flex gap-2">

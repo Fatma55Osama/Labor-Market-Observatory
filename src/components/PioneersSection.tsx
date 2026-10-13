@@ -57,6 +57,12 @@ const partners = [
     logo: engineerLogo,
     bg: 'var(--success-soft)',
   },
+   {
+    name: 'مركز المعلومات ودعم اتخاذ القرار',
+    short: 'مركز المعلومات ودعم القرار',
+    logo: DecisionSupport,
+    bg: 'var(--danger-soft)',
+  },
   {
     name: 'وزارة التعليم العالي والبحث العلمي',
     short: 'وزارة التعليم العالي',
@@ -75,12 +81,7 @@ const partners = [
     logo: Statistics,
     bg: 'var(--info-soft)',
   },
-  {
-    name: 'مركز المعلومات ودعم اتخاذ القرار',
-    short: 'مركز المعلومات ودعم القرار',
-    logo: DecisionSupport,
-    bg: 'var(--danger-soft)',
-  },
+ 
 ]
 
 export default function PioneersSection() {
