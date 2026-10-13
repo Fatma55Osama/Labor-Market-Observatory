@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import siteLogo from '@/assets/________________________-2.png'
+import { Moon, Sun } from 'lucide-react'
 
 const navItems = [
   { label: 'الرئيسية', to: '/' },
@@ -29,15 +30,17 @@ export default function Navbar() {
             <span className="opacity-80">الإثنين، 22 سبتمبر 2026</span>
           </div>
           <div className="flex items-center gap-3">
-            <button className="opacity-80 hover:opacity-100 transition-opacity">العربية</button>
+            {/* <button className="opacity-80 hover:opacity-100 transition-opacity">العربية</button> */}
+            <Sun />
             <span className="opacity-40">|</span>
-            <button className="opacity-80 hover:opacity-100 transition-opacity">English</button>
+            {/* <button className="opacity-80 hover:opacity-100 transition-opacity">English</button> */}
+            <Moon />
           </div>
         </div>
       </div>
 
       {/* Main nav */}
-      <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between gap-4">
+      <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between gap-11">
         <Link to="/" className="flex items-center gap-3 shrink-0">
           <div className="w-20 h-16 rounded-xl bg-white border border-[var(--border)] overflow-hidden flex items-center justify-center shadow-sm">
             <img src={siteLogo} alt="شعار مرصد سوق العمل الهندسي" className="w-full h-full object-contain" />
@@ -49,7 +52,7 @@ export default function Navbar() {
         </Link>
 
         {/* Nav links desktop */}
-        <div className="hidden xl:flex items-center gap-0.5 flex-1 justify-center">
+        <div className="hidden xl:flex items-center gap-0.5 flex-1 ">
           {navItems.map(item => (
             <NavLink
               key={item.to}
@@ -67,7 +70,7 @@ export default function Navbar() {
             </NavLink>
           ))}
         </div>
-
+{/* 
         <div className="flex items-center gap-2 shrink-0">
           <button className="hidden sm:flex items-center gap-2 px-4 py-2 rounded-lg border border-[var(--primary)] text-[var(--primary)] text-sm font-medium hover:bg-[var(--primary)] hover:text-white transition-colors">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
@@ -86,7 +89,7 @@ export default function Navbar() {
                 : <path d="M3 12h18M3 6h18M3 18h18"/>}
             </svg>
           </button>
-        </div>
+        </div> */}
       </div>
 
       {mobileOpen && (
