@@ -180,6 +180,7 @@ export default function MediaPage() {
   const [catFilter, setCatFilter] = useState("الكل");
 
   const allCats = ["الكل", ...Array.from(new Set(news.map((n) => n.cat)))];
+  
   const handleShare = async (inf: any) => {
     const shareData = {
       title: inf.title,
