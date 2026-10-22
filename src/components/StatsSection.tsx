@@ -215,9 +215,9 @@ export default function StatsSection() {
             </div>
             <div className="space-y-3">
               {[
-                { label: "رضا عن بيئة العمل", value: 62 },
-                { label: "التزام المهني", value: 78 },
-                { label: "جاهزية رقمية", value: 44 },
+                { label: "الرضا عن بيئة العمل", value: 62 },
+                { label: "مهندس بدرجة استشاري", value: 37 },
+                { label: " مهارات الذكاء الاصطناعي", value: 44 },
                 { label: "مهارات القيادة", value: 38 },
               ].map((row) => (
                 <div key={row.label}>

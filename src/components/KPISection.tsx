@@ -15,7 +15,7 @@ const indicators = [
     unit: 'مهندس',
     target: '3,000,000',
     achieved: '2,847,320',
-    progress: 94.9,
+    progress: 60.2,
     change: '+3.2%',
     positive: true,
     color: 'var(--primary)',
@@ -30,7 +30,7 @@ const indicators = [
     unit: '%',
     target: '80%',
     achieved: '73.4%',
-    progress: 91.75,
+    progress: 80.1,
     change: '+2.1%',
     positive: true,
     color: 'var(--secondary)',
@@ -45,7 +45,7 @@ const indicators = [
     unit: '%',
     target: '6%',
     achieved: '8.2%',
-    progress: 58,
+    progress: 38,
     change: '-0.8%',
     positive: true,
     color: 'var(--danger)',
@@ -174,9 +174,9 @@ export default function KPISection() {
             >
               <div className="flex items-start justify-between mb-3">
                 <div>
-                  <span className="inline-block text-xs font-semibold px-2 py-0.5 rounded-full bg-[var(--muted)] text-[var(--muted-foreground)] mb-2">
+                  {/* <span className="inline-block text-xs font-semibold px-2 py-0.5 rounded-full bg-[var(--muted)] text-[var(--muted-foreground)] mb-2">
                     {ind.category}
-                  </span>
+                  </span> */}
                   <p className="text-xs text-[var(--muted-foreground)] leading-snug max-w-[120px]">{ind.label}</p>
                 </div>
                 <GaugeRing progress={ind.progress} color={ind.color} lower={ind.lower} />
