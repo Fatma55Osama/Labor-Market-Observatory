@@ -131,7 +131,7 @@ export default function StatsSection() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           <div className="bg-background border border-white/12 rounded-2xl p-5 sm:col-span-1">
             <div
-              className=" font-semibold text-sm mb-4 text-[var(--gen)]"
+              className=" font-semibold text-sm mb-4 text-[var(--iconColor)]"
              
             >
               التوزيع العمري
@@ -178,7 +178,7 @@ export default function StatsSection() {
 
           <div className="bg-background border border-white/12 rounded-2xl p-5">
             <div
-              className=" font-semibold text-sm mb-4 text-[var(--gen)]"
+              className=" font-semibold text-sm mb-4 text-[var(--iconColor)]"
             
             >
               التوزيع القطاعي
@@ -209,9 +209,9 @@ export default function StatsSection() {
 
           <div className="bg-background border border-white/12 rounded-2xl p-5">
             <div
-              className=" font-semibold text-sm mb-4 text-[var(--gen)]"
+              className=" font-semibold text-sm mb-4 text-[var(--iconColor)]"
             >
-              مؤشرات النوعية
+             مؤشرات نوعية
             </div>
             <div className="space-y-3">
               {[

@@ -238,12 +238,12 @@ export default function AboutPage() {
                   <div className="w-16 h-16 rounded-full overflow-hidden mx-auto mb-3 border-2 border-[var(--border)]">
                     <img
                       src={mohamedAbdelGhaniImage}
-                      alt="أ.د. محمد عبد الغني"
+                      alt="أ. د. م. محمد عبد الغني"
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="font-bold text-sm text-[var(--primary)]">
-                    أ.د. محمد عبد الغني&nbsp;&nbsp;&nbsp;
+                   أ. د. م. محمد عبد الغني&nbsp;&nbsp;&nbsp;
                   </div>
                   <div className="text-xs text-[var(--muted-foreground)] mt-0.5">
                     النقيب العام لمهندسي مصر

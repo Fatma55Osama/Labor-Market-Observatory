@@ -17,6 +17,7 @@
   --color-border: var(--border);
   --color-ring: var(--ring);
   --radius-DEFAULT: var(--radius);
+  --color-iconColor:var(--iconColor)
 }
 
 :root {
