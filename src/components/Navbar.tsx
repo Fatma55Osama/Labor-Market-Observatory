@@ -16,6 +16,13 @@ const navItems = [
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
 
+  const currentDate = new Intl.DateTimeFormat('ar-EG', {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric'
+  }).format(new Date())
+
   return (
     <nav className="sticky top-0 z-50 bg-white border-b border-[var(--border)] shadow-sm">
       {/* Top bar */}
@@ -27,7 +34,7 @@ export default function Navbar() {
               19588
             </span>
             <span className="opacity-40">|</span>
-            <span className="opacity-80">الإثنين، 22 سبتمبر 2026</span>
+            <span className="opacity-80">{currentDate}</span>
           </div>
           <div className="flex items-center gap-3">
             {/* <button className="opacity-80 hover:opacity-100 transition-opacity">العربية</button> */}
