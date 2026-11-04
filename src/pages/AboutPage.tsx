@@ -1,7 +1,7 @@
 import { useState } from "react";
 import PageHeader from "../components/PageHeader";
 import mohamedAbdelGhaniImage from "@/assets/images__1_.jpg";
-import ahmedElBadawyImage from "@/assets/images.jpg";
+import mostafaImage from "@/assets/mostafa.jpeg";
 import higherEducationLogo from '@/assets/WhatsApp_Image_2026-09-26_at_3.50.32_PM.jpeg'
 import engineerLogo from '@/assets/logos/logo1.png'
 import worklogo from '@/assets/logos/logo3.png'
@@ -255,13 +255,13 @@ export default function AboutPage() {
                 <div className="text-center">
                   <div className="w-16 h-16 rounded-full overflow-hidden mx-auto mb-3 border-2 border-[var(--border)]">
                     <img
-                      src={ahmedElBadawyImage}
-                      alt="م. احمد البدوي سيد عبدالمنعم"
+                      src={mostafaImage}
+                      alt="د.م. مصطفى أبو زيد"
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="font-bold text-sm text-[var(--primary)]">
-                    م. احمد البدوي سيد عبدالمنعم
+                    د.م.  مصطفى أبو زيد
                   </div>
                   <div className="text-xs text-[var(--muted-foreground)] mt-0.5">
                     وكيل النقابة
